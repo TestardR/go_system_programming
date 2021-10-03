@@ -14,7 +14,6 @@ func main() {
 
 	file := arguments[1]
 	info, err := os.Stat(file)
-	fmt.Printf("%+v\n", info)
 	if err != nil {
 		fmt.Println("Error:", err)
 		os.Exit(1)
